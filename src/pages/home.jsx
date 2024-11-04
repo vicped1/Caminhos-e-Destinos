@@ -14,6 +14,7 @@ import { FingerPrintIcon, SunIcon, UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
+import { Link } from "react-router-dom";
 
 export function Home() {
   return (
@@ -113,7 +114,9 @@ export function Home() {
                 position={position}
                 socials={
                   <div className="flex items-center gap-2">
-                    <Button variant="filled">ler mais</Button>
+                    <Link to="/details">
+                      <Button variant="filled">ler mais</Button>
+                    </Link>
                   </div>
                 }
               />

@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { Navbar } from "@/widgets/layout";
 import routes from "@/routes";
+import TourDetails from "./pages/tour-details";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           ({ path, element }, key) =>
             element && <Route key={key} exact path={path} element={element} />
         )}
+        <Route path="/details" element={<TourDetails />} />
         <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
     </>
