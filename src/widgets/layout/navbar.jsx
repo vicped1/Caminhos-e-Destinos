@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+=======
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { Link, useNavigate } from "react-router-dom";
+>>>>>>> 9f16a6e (checkout + avaliações funcionalidades)
 import {
   Navbar as MTNavbar,
   MobileNav,
@@ -9,10 +15,18 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+<<<<<<< HEAD
 import { MapPinIcon } from "@heroicons/react/24/solid";
 
 export function Navbar({ brandName, routes, action }) {
   const [openNav, setOpenNav] = React.useState(false);
+=======
+
+export function Navbar({ brandName, routes, action }) {
+  const [openNav, setOpenNav] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const navigate = useNavigate();
+>>>>>>> 9f16a6e (checkout + avaliações funcionalidades)
 
   React.useEffect(() => {
     window.addEventListener(
@@ -21,6 +35,17 @@ export function Navbar({ brandName, routes, action }) {
     );
   }, []);
 
+<<<<<<< HEAD
+=======
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen)
+  };
+
+  const handleLogout = () => {
+    console.log("Logout")
+  };
+
+>>>>>>> 9f16a6e (checkout + avaliações funcionalidades)
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 text-inherit lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       {routes.map(({ name, path, icon, href, target }) => (

@@ -1,5 +1,8 @@
 import {
+<<<<<<< HEAD
   ChatBubbleBottomCenterTextIcon,
+=======
+>>>>>>> 9f16a6e (checkout + avaliações funcionalidades)
   EyeIcon,
   QuestionMarkCircleIcon,
   SparklesIcon,

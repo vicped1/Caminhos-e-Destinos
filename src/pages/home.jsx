@@ -10,10 +10,17 @@ import {
   Textarea,
   Checkbox,
 } from "@material-tailwind/react";
+<<<<<<< HEAD
 import { FingerPrintIcon, SunIcon, UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
+=======
+import { SunIcon } from "@heroicons/react/24/solid";
+import { PageTitle, Footer } from "@/widgets/layout";
+import { FeatureCard, TeamCard } from "@/widgets/cards";
+import { featuresData, teamData} from "@/data";
+>>>>>>> 9f16a6e (checkout + avaliações funcionalidades)
 import { Link } from "react-router-dom";
 
 export function Home() {

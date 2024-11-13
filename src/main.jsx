@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
 =========================================================
 * Material Tailwind Kit React - v2.1.0
@@ -10,6 +11,8 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+=======
+>>>>>>> 9f16a6e (checkout + avaliações funcionalidades)
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";

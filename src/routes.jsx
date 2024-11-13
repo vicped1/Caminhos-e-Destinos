@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { Home, Profile, SignIn, SignUp } from "@/pages";
+=======
+import { Home, SignIn, SignUp } from "@/pages";
+>>>>>>> 9f16a6e (checkout + avaliações funcionalidades)
 
 export const routes = [
   {
